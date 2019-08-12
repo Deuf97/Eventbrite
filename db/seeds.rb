@@ -12,4 +12,5 @@ User.create(first_name: "kevin", email:"kevin@yopmail.com")
 User.create(first_name: "frederic", email:"frederic@yopmail.com")
 User.create(first_name: "vins", email:"vins@yopmail.com")
 User.create(first_name: "ayoub", email:"ayoub@yopmail.com")
+User.create(first_name:"Cogno", email: "Cogno@yopmail.com")
 puts "plusieurs utilisateurs ont été créés"
