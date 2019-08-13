@@ -4,12 +4,23 @@
     <title>Eventbrite</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+  <nav class="navbar navbar-dark bg-dark">
+  <%= link_to "Accueil", events_path %>
+  <%= link_to "créer ton event", new_event_path %>
+  <%= link_to "Accueil", events_path %>
+  <%= link_to "S'inscrire", new_event_path %>
+  <%= link_to "Se connecter", new_event_path %>
+  <%= link_to "mon profil", new_event_path %>
+  <%= link_to "Se déconnecter", new_event_path %>
+  
+  </nav>
+  
     <%= yield %>
   </body>
 </html>
